@@ -1,11 +1,10 @@
 import React from 'react'
 
-const Buttons = () => {
+function Buttons() {
   return (
     <div>
       
     </div>
   )
 }
-
 export default Buttons

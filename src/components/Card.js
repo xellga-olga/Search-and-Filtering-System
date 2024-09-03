@@ -1,11 +1,10 @@
 import React from 'react'
 
-const Card = () => {
+function Card() {
   return (
     <div>
       
     </div>
   )
 }
-
 export default Card

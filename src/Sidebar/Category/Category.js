@@ -4,7 +4,7 @@ import "./Category.css";
 function Category() {
   return (
     <div className="category">
-      <h2 className="sidebar-titile">Category</h2>
+      <h2 className="sidebar-title">Category</h2>
       <div className="sidebar-items">
         <label className="sidebar-label-container">
           <input type="radio" name="test" />

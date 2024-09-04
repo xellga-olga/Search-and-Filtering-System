@@ -1,0 +1,15 @@
+.ml {
+width: 150px;
+  margin-bottom: 30px;
+}
+
+.price-title {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.sidebar-items,
+.ml {
+  margin-top: 10px;
+}

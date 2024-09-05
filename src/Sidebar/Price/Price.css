@@ -1,6 +1,5 @@
 .ml {
-width: 150px;
-  margin-bottom: 30px;
+  width: 150px;
 }
 
 .price-title {
@@ -9,7 +8,7 @@ width: 150px;
   margin-bottom: 15px;
 }
 
-.sidebar-items,
+/* .sidebar-items,
 .ml {
   margin-top: 10px;
-}
+} */

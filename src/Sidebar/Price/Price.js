@@ -26,6 +26,7 @@ function Price() {
           <input type="radio" name="test2" />
           <span className="checkmark"></span>Over $250
         </label>
+        <div className="line"></div>
     </div>
   );
 }

@@ -3,9 +3,10 @@
 }
 
 .sidebar-title {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: normal;
   margin-bottom: 20px;
+  letter-spacing: 1px;
 }
 
 .sidebar-items {
@@ -37,7 +38,7 @@
   left: 0;
   height: 20px;
   width: 20px;
-  background-color: #eee;
+  background-color: #a9a9a9;
   border-radius: 50%;
 }
 

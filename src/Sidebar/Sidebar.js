@@ -10,7 +10,7 @@ import { GiShoppingCart } from "react-icons/gi";
 function Sidebar() {
   return (
     <section className="sidebar">
-      <div className="logo-container">
+      <div className="logo-container" >
         <h1><GiShoppingCart/></h1>
       </div>
 

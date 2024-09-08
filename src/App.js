@@ -52,6 +52,8 @@ function App() {
       );
     }
 
+    const result = filteredData(products, selectedCategory, query)
+
     return filteredProducts.map(({ img, title, star, reviews, newPrice, prevPrice }) => (
       <Card key={Math.random()} 
       img={img}
@@ -66,7 +68,7 @@ function App() {
 
   return (
     <>
-      <Sidebar />
+      <Sidebar handleChange={handleChange}/>
       <Navigation />
       <Recommended />
       <Products />

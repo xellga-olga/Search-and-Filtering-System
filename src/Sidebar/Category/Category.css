@@ -1,5 +1,5 @@
 .category {
-   width: 150px;
+  width: 150px;
 }
 
 .sidebar-title {
@@ -65,7 +65,7 @@
   left: 6.4px;
   width: 7px;
   height: 7px;
-  background: white;
+  background: #00ff0d;
   border-radius: 50%;
 }
 

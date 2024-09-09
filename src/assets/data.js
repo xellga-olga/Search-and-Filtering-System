@@ -42,7 +42,7 @@ const data = [
       prevPrice: '$70.00',
       newPrice: '$50.00',
       company: 'Vans',
-      color: 'black/white',
+      color: 'black',
       category: 'skate'
    },
    {

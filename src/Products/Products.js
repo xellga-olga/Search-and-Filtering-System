@@ -7,6 +7,14 @@ function Products() {
     <>
       <section className="card-container">
         <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+        <Card />
       </section>
     </>
   );

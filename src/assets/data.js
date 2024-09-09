@@ -21,7 +21,7 @@ const data = [
       newPrice: '$150.00',
       company: 'Adidas',
       color: 'black',
-      category: 'running shoes'
+      category: 'running'
    },
    {
       img: 'https://s13emagst.akamaized.net/products/38288/38287897/images/res_92a9d7d684ef16a6fb6263e5ff6f2bf6.jpg?width=720&height=720&hash=ED91F69CD74E3B6DD303DFD197D72404',
@@ -32,7 +32,7 @@ const data = [
       newPrice: '$65.00',
       company: 'Puma',
       color: 'red',
-      category: 'casual shoes'
+      category: 'casual'
    },
    {
       img: 'https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT3a811p0nVr2B2F_8z47ow-Ghzw-bgmxuGbDPkYsv3fA28AVlIfmfooMRIVZIjdMmgmW0JAqRZzLF4cZxkH7-YR0EjhRkVhtu5X9i5CZothaON&usqp=CAc',
@@ -43,7 +43,7 @@ const data = [
       newPrice: '$50.00',
       company: 'Vans',
       color: 'black/white',
-      category: 'skate shoes'
+      category: 'skate'
    },
    {
       img: 'https://dr9l7gb9cebpv.cloudfront.net/media/catalog/product/cache/2774d42b8e55ba58cfe3fc9632392955/a/0/a04688c_a_107x1_2.jpg',
@@ -54,7 +54,7 @@ const data = [
       newPrice: '$45.00',
       company: 'Converse',
       color: 'white',
-      category: 'high-top sneakers'
+      category: 'high-top'
    },
    {
       img: 'https://nb.scene7.com/is/image/NB/ml574evg_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600',
@@ -65,7 +65,7 @@ const data = [
       newPrice: '$75.00',
       company: 'New Balance',
       color: 'gray',
-      category: 'lifestyle shoes'
+      category: 'lifestyle'
    },
    {
       img: 'https://images.asics.com/is/image/asics/1011A767_402_SR_RT_GLB?$sfcc-product$',

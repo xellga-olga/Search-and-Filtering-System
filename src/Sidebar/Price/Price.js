@@ -14,19 +14,19 @@ function Price({ handleChange }) {
         <Input
           value={50}
           handleChange={handleChange}
-          title="$0 - 50"
+          title="$0 - $50"
           name="price"
         />
         <Input
           value={100}
           handleChange={handleChange}
-          title="$50 - 100"
+          title="$50 - $100"
           name="price"
         />
         <Input
           value={150}
           handleChange={handleChange}
-          title="$100 - 150"
+          title="$100 - $150"
           name="price"
         />
         <Input

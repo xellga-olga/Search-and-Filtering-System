@@ -2,28 +2,31 @@
   width: 150px;
 }
 
+.sidebar-section {
+  width: 100px;
+}
+
 .sidebar-title {
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 14px;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
-.sidebar-items {
+/* .sidebar-items {
   margin-top: 20px;
-}
+} */
 
 .sidebar-label-container {
   display: block;
   position: relative;
   cursor: pointer;
-  margin-bottom: 12px;
+  margin-bottom: 9px;
   padding-left: 35px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .sidebar-label-container input {
@@ -36,8 +39,8 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   background-color: #a9a9a9;
   border-radius: 50%;
 }
@@ -61,8 +64,8 @@
 }
 
 .sidebar-label-container .checkmark::after {
-  top: 6.4px;
-  left: 6.4px;
+  top: 4.4px;
+  left: 4.4px;
   width: 7px;
   height: 7px;
   background: #00ff0d;

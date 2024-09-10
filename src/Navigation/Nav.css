@@ -2,11 +2,12 @@ nav {
    display: flex;
    justify-content: space-around;
    align-items: center;
-   border-bottom: 2px solid #f3f3f3;
+   border-bottom: 2px solid #e5e5e5;
    padding: 20px;
    z-index: 1;
    position: relative;
-   margin-left: 32px;
+   margin-left: 150px;
+   background: #f0f0f0;
 }
 
 input {
@@ -14,7 +15,7 @@ input {
    padding: 12px 20px;
    border: none;
    outline: none;
-   background: #f7f6f6;
+   background: #ffffff;
    margin-right: 20px;
    border-radius: 5px;
 }

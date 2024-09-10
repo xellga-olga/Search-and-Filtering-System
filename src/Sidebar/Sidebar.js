@@ -11,9 +11,9 @@ function Sidebar({ handleChange }) {
   console.log(handleChange)
   return (
     <section className="sidebar">
-      <div className="logo-container" >
+      {/* <div className="logo-container" >
         <h1><GiShoppingCart/></h1>
-      </div>
+      </div> */}
 
       <Category handleChange={handleChange}/>
       <Price handleChange={handleChange}/>

@@ -10,7 +10,7 @@ function Nav() {
         <input
           className="search-input"
           type="text"
-          placeholder="Enter ypur search shoes"
+          placeholder="Enter your search shoes"
         />
       </div>
 

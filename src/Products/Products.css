@@ -15,10 +15,13 @@
 
 .card-img {
    width: 208px;
+   height: 208px;
    margin-bottom: 32px;
 }
 
 .card-title {
+   font-size: 16px;
+   width: 150px;
    margin-bottom: 16px;
 }
 
@@ -27,7 +30,7 @@
    margin-bottom: 16px;
 }
 
-.ratings-start {
+.rating-star{
    color: rgb(255, 227, 71);
 }
 

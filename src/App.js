@@ -3,6 +3,7 @@ import Navigation from "./Navigation/Nav";
 import Products from "./Products/Products";
 import Recommended from "./Recommended/Recommended";
 import Sidebar from "./Sidebar/Sidebar";
+import './index.css'
 
 //DATABASE
 import products from "./assets/data";
@@ -19,7 +20,7 @@ function App() {
   };
 
   const filteredItems = products.filter((product) =>
-    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase()) !== -1
   );
 
   // Radio Filter

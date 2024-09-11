@@ -1,5 +1,6 @@
 import React from "react";
 import { BsFillBagHeartFill } from "react-icons/bs";
+import "../Products/Products.css";
 
 function Card({ img, title, star, reviews, newPrice, prevPrice }) {
   return (
@@ -13,7 +14,8 @@ function Card({ img, title, star, reviews, newPrice, prevPrice }) {
         </section>
         <section className="card-price">
           <div className="price">
-            <del>${prevPrice}</del> ${newPrice}
+            <del>${prevPrice}</del>
+            <span className="new-price"> ${newPrice}</span>{" "}
           </div>
 
           <div className="bag">

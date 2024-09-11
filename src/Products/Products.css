@@ -16,11 +16,11 @@
 .card-img {
   width: 208px;
   height: 208px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
 }
 
 .card-title {
-  font-size: 16px;
+  font-size: 14px;
   width: 150px;
   margin-bottom: 16px;
 }
@@ -35,7 +35,7 @@
 }
 
 .total-reviews {
-  font-size: 16px;
+  font-size: 12px;
   margin-left: 10px;
 }
 
@@ -44,6 +44,7 @@
   justify-content: space-around;
   align-items: center;
 }
+
 
 .card-details {
   display: flex;
@@ -54,3 +55,8 @@
 .bag-icon {
   color: #535353;
 }
+
+.new-price {
+   color: red;
+   font-weight: bold;
+ }

@@ -5,8 +5,6 @@ import Category from './Category/Category'
 import Price from './Price/Price'
 import Colors from './Colors/Colors'
 
-import { GiShoppingCart } from "react-icons/gi";
-
 function Sidebar({ handleChange }) {
   console.log(handleChange)
   return (

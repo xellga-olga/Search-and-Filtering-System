@@ -2,6 +2,7 @@
    display: flex;
    margin-left: 320px;
    font-family: sans-serif;
+   gap: 16px;
 }
 
 .recommended-title {

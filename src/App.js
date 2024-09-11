@@ -10,80 +10,67 @@ import Card from "./components/Card";
 
 function App() {
   const [selectedCategory, setSelectedCategory] = useState(null);
-  const [selectedPrice, setSelectedPrice] = useState(null);
 
-  // Input Filter
+  //Input Filter
   const [query, setQuery] = useState("");
 
   const handleInputChange = (event) => {
     setQuery(event.target.value);
   };
 
-  // Radio Filter for categories and prices
+  const filteredItems = products.filter((product) =>
+    product.title.toLocaleLowerCase().indexOf(query.toLocaleLowerCase() !== -1)
+  );
+
+  // Radio Filter
   const handleChange = (event) => {
     setSelectedCategory(event.target.value);
   };
 
-  const handlePriceChange = (event) => {
-    setSelectedPrice(event.target.value);
-  };
-
-  // Buttons Filter (e.g. for recommended)
+  // Buttons Filter
   const handleClick = (event) => {
     setSelectedCategory(event.target.value);
   };
 
-  function filteredData(products, selectedCategory, query, selectedPrice) {
+  function filteredData(products, selected, query) {
     let filteredProducts = products;
 
-    // Filtering by query
+    // Filtering input items
     if (query) {
-      filteredProducts = filteredProducts.filter((product) =>
-        product.title.toLowerCase().includes(query.toLowerCase())
-      );
+      filteredProducts = filteredItems;
     }
 
-    // Filtering by category
-    if (selectedCategory) {
+    // Selected filter
+    if (selected) {
       filteredProducts = filteredProducts.filter(
-        (product) => product.category === selectedCategory
+        ({ category, color, company, title, newPrice }) =>
+          category === selected ||
+          color === selected ||
+          company === selected ||
+          newPrice === selected ||
+          title === selected
       );
     }
 
-    // Filtering by price
-    if (selectedPrice) {
-      filteredProducts = filteredProducts.filter((product) => {
-        const price = product.newPrice;
-        if (selectedPrice === "50") return price <= 50;
-        if (selectedPrice === "100") return price > 50 && price <= 100;
-        if (selectedPrice === "150") return price > 100 && price <= 150;
-        if (selectedPrice === "200") return price > 150;
-        return true; // for "All" option or default case
-      });
-    }
-
-    return filteredProducts;
+    return filteredProducts.map(({ img, title, star, reviews, newPrice, prevPrice }) => (
+      <Card key={Math.random()} 
+      img={img}
+      title={title}
+      star={star}
+      reviews={reviews}
+      newPrice={newPrice}
+      prevPrice={prevPrice}
+      />
+    ));
   }
-
-  // Get filtered result
-  const result = filteredData(products, selectedCategory, query, selectedPrice);
+  const result = filteredData(products, selectedCategory, query)
 
   return (
     <>
-      <Sidebar handleChange={handleChange} handlePriceChange={handlePriceChange} />
-      <Navigation query={query} handleInputChange={handleInputChange} />
-      <Recommended handleClick={handleClick} />
-      <Products result={result.map(({ id, img, title, star, reviews, newPrice, prevPrice }) => (
-        <Card
-          key={id}
-          img={img}
-          title={title}
-          star={star}
-          reviews={reviews}
-          newPrice={newPrice}
-          prevPrice={prevPrice}
-        />
-      ))} />
+      <Sidebar handleChange={handleChange}/>
+      <Navigation query={query} handleInputChange={handleInputChange}/>
+      <Recommended handleClick={handleClick}/>
+      <Products result={result} />
     </>
   );
 }

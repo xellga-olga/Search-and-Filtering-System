@@ -65,7 +65,7 @@ const data = [
       id: 6,
       img: 'https://nb.scene7.com/is/image/NB/ml574evg_nb_02_i?$dw_detail_main_lg$&bgc=f1f1f1&layer=1&bgcolor=f1f1f1&blendMode=mult&scale=10&wid=1600&hei=1600',
       title: 'New Balance 574',
-      star: <AiFillStar className="rating-start" />,
+      star: <AiFillStar className="rating-star" />,
       reviews: '(220 reviews)',
       prevPrice: 90,
       newPrice: 67,
